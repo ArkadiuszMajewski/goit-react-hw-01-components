@@ -1,4 +1,4 @@
-import { Alert } from './Alert/alert';
+import { Alert } from '../Alert/alert';
 import './task03.css';
 export const FriendList = props => {
   //   console.log(props);

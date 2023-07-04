@@ -1,4 +1,4 @@
-import '../task03.css';
+import '../task03/task03';
 export const Alert = props => {
   return (
     <p
