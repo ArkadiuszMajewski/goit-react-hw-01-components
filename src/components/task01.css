@@ -1,6 +1,7 @@
+@import-normalize;
 .profile {
   max-width: 600px;
-  background-color: rgb(198, 194, 194);
+  background-color: rgb(224, 227, 228);
   margin: 30px auto;
   display: flex;
   flex-direction: column;
@@ -15,7 +16,7 @@
   height: 300px;
   margin: 30px auto 40px;
   border-radius: 50%;
-  background-color: aliceblue;
+  background-color: rgb(224, 227, 228);
 }
 .name {
   margin: 0px auto;

@@ -1,40 +1,28 @@
-import { stat } from '../index';
+import './task02.css';
+export const Statistics = props => {
+  const StatMap = () => {
+    return props.stats.map(a => {
+      const label = a.label;
+      const percentage = a.percentage;
+      const id = a.id;
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
 
-// export const Statistics = () => {
-//   const Docx = stat[0].label;
-//   const Docxpc = stat[0].percentage;
-//   const Mp3 = stat[3].label;
-//   const Mp3pc = stat[3].percentage;
-//   const Pdf = stat[2].label;
-//   const Pdfpc = stat[2].percentage;
-
-//   return (
-//     <section>
-//       <h2>Upload stats</h2>
-
-//       <ul>
-//         <li>
-//           <span>{Docx} </span>
-//           <span>{Docxpc}%</span>
-//         </li>
-//         <li>
-//           <span>{Mp3} </span>
-//           <span>{Mp3pc}%</span>
-//         </li>
-//         <li>
-//           <span>{Pdf} </span>
-//           <span>{Pdfpc}%</span>
-//         </li>
-//         <li>
-//           <span>{.mp4}</span>
-//           <span>12%</span>
-//         </li>
-//       </ul>
-//     </section>
-//   );
-// };
-export const Statistics = () => {
-  const dddd = stat;
-  console.log(dddd);
-  return <div>sss</div>;
+      return (
+        <li
+          key={id}
+          className="item"
+          style={{ backgroundColor: `#${randomColor}` }}
+        >
+          <span className="statistics-label">{label}</span>
+          <span className="percentage">{percentage}%</span>
+        </li>
+      );
+    });
+  };
+  return (
+    <section className="statistics">
+      <h2 className="title">{props.title}</h2>
+      <ul className="stat-list">{StatMap()}</ul>
+    </section>
+  );
 };

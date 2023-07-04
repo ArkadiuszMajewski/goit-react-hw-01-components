@@ -1,0 +1,35 @@
+@import-normalize;
+.statistics {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 0px;
+  background-color: rgb(224, 227, 228);
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.stat-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+}
+.item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.statistics-label {
+  color: white;
+}
+.percentage {
+  color: white;
+}
