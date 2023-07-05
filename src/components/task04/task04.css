@@ -12,6 +12,7 @@
 }
 .transaction-history--body {
   border: 1px solid black;
+  text-align: center;
 }
 
 .transaction-tbody {
