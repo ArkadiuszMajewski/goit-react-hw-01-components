@@ -1,0 +1,19 @@
+.transaction-history {
+  width: 600px;
+  margin: 30px auto 30px;
+  box-shadow: 0px 0px 5px 0px;
+  border-collapse: collapse;
+}
+
+.transaction-history--head {
+  background-color: rgb(32, 198, 203);
+  color: white;
+  height: 30px;
+}
+.transaction-history--body {
+  border: 1px solid black;
+}
+
+.transaction-tbody {
+  border-collapse: collapse;
+}

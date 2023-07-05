@@ -5,7 +5,6 @@ export const FriendList = props => {
 
   const FriendListItem = () => {
     return props.friends.map(a => {
-      console.log(a);
       const avatar = a.avatar;
       const name = a.name;
       const variant = a.isOnline;
