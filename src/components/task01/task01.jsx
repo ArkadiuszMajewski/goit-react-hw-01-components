@@ -1,14 +1,16 @@
-import { user } from 'index.js';
+import PropTypes from 'prop-types';
 import './task01.css';
 
-export const Profile = () => {
-  const Username = user.username;
-  const Tag = user.tag;
-  const Location = user.location;
-  const Avatar = user.avatar;
-  const Followers = user.stats.followers;
-  const Views = user.stats.views;
-  const Likes = user.stats.likes;
+export const Profile = props => {
+  console.log(props);
+
+  const Username = props.user.username;
+  const Tag = props.user.tag;
+  const Location = props.user.location;
+  const Avatar = props.user.avatar;
+  const Followers = props.user.stats.followers;
+  const Views = props.user.stats.views;
+  const Likes = props.user.stats.likes;
 
   return (
     <div>
@@ -38,3 +40,6 @@ export const Profile = () => {
     </div>
   );
 };
+// Profile.PropTypes={
+//   props.user.username
+// }

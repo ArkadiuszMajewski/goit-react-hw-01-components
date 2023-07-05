@@ -10,11 +10,9 @@ import stats from './components/json/data.json';
 import friends from './components/json/friends.json';
 import transactions from './components/json/transactions.json';
 
-export const user = data;
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Profile />
+    <Profile user={data} />
     <Statistics title="Upload stats" stats={stats} />
     <FriendList friends={friends} />;
     <TransactionHistory transactions={transactions} />
